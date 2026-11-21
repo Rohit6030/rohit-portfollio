@@ -1,0 +1,20 @@
+[build]
+  publish = "dist"
+
+[[redirects]]
+  from = "/dist/*"
+  to = "/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio-preview.html"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"

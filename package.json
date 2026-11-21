@@ -1,0 +1,10 @@
+{
+  "name": "rohit-patil-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Rohit Patil's animated full stack developer portfolio",
+  "scripts": {
+    "start": "node serve.mjs"
+  }
+}
